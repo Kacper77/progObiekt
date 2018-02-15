@@ -24,3 +24,17 @@ Phone.prototype.printInfo = function() {
 		SamsungGalaxyS6.printInfo();
 	var OnePlusOne = new Phone("OnePlus", 1400, "black", "Android", "16GB");
 		OnePlusOne.printInfo();
+/////
+function PhoneTwo(cam, model){
+	this.cam = cam;
+	this.model = model;
+}
+PhoneTwo.prototype.infoTwo = function() {
+	console.log(`This ${this.model} also has the camera ${this.cam}.`);
+}
+	var iPhone6S = new PhoneTwo("12Mpix ", "iPhone6S");
+		iPhone6S.infoTwo();
+	var SamsungGalaxyS6 = new PhoneTwo("15Mpix", "SamsungGalaxyS6");
+		SamsungGalaxyS6.infoTwo();
+	var OnePlusOne = new PhoneTwo("12Mpix", "OnePlusOne");
+		OnePlusOne.infoTwo();
